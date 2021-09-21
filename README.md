@@ -11,6 +11,12 @@ This web app is created with:
 * HTML
 * CSS
 
+The models were created using python libraries:
+* SciKit-Learn
+* Pandas
+* Numpy
+* Matplotlib - for graphs within web app
+
 ## Setup:
 
 Go to [this website](https://hotelcancel.herokuapp.com/) where it is hosted on heroku.
