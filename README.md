@@ -2,7 +2,7 @@
 
 ## General Info:
 
-Hotel cancelation prediction web app created using python. It was trained using a random forest classifier and is hosted on heroku.
+Hotel cancelation prediction web app created using python. It was trained using a random forest classifier using [this data](https://www.kaggle.com/jessemostipak/hotel-booking-demand).
 
 ## Technologies:
 
