@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='graphs.css') }}">
+    <title>Graphs</title>
+  </head>
+
+  <div class="topnav">
+    <a href="/home">Home</a>
+    <a class="active" href="/graphs">Graphs</a>
+  </div>
+
+  <body>
+    <br>
+    <div class="img-div">
+
+      <img src="{{url_for('static', filename='img/bookings-canceled-bar.png')}}" class="long-img" alt="bookings-canceled-bar.png">
+
+      <img src="{{url_for('static', filename='img/roc.png')}}" class="roc-img" alt="roc.png">
+
+      <span class="txt">
+        <span style="margin:2%;">Above</span>
+        <span class="bar-txt">
+          The graph above shows the cumulative number of cancellations each week over in
+          the given data.
+        </span>
+        <span style="margin:2%;">Left</span>
+        <span class="roc-txt">
+          The graph to the left shows the ROC (receiver operating characteristic curve).
+          The area under the ROC curve (AUC) is made by plotting the (TPR) true positive rate
+          against the (FPR) false positive rate, where the closer the score is to 1 the better.
+        </span>
+      </span>
+    </div>
+  </body>
+</html>

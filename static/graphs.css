@@ -1,0 +1,84 @@
+body {
+    font-size: 10px;
+    background-color: #4c72b0;
+    color: #212121;
+}
+
+input[type=submit] {
+    border: 0px;
+    width: 10%;
+    font-size:25px;
+    font-weight:bold;
+}
+
+.topnav {
+  background-color: #212121;
+  overflow: hidden;
+  box-shadow: -2px -2px 5px white,2px -2px 5px white;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  color: #eaeaf2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 25px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #4c72b0;
+  color: black;
+}
+
+.img-div{
+    padding-left: 5%;
+    padding-right: 5%;
+    width:90%;
+}
+
+.long-img {
+    width: 100%;
+    padding-top: 0.5%;
+    padding-bottom: 0.5%;
+}
+
+.roc-img {
+    padding-top: 0.5%;
+    padding-bottom: 0.5%;
+    margin-top: 0.5%;
+    width: 23.5%;
+}
+
+.txt {
+    position: absolute;
+    font-size: 1vw;
+    margin: 1%;
+    width: 66%;
+}
+
+.roc-txt {
+    font-size: 1.5vw;
+    background: #eaeaf2;
+    display: block;
+    height: 50%;
+    margin: 0% 1% 1% 1%;
+    padding: 1%;
+    border-radius: 40px;
+    border-style: solid;
+    border-width: 1px;
+}
+
+.bar-txt {
+    font-size: 1.5vw;
+    background: #eaeaf2;
+    display: block;
+    height: 50%;
+    margin: 0% 1% 1% 1%;
+    padding: 1%;
+    border-radius: 40px;
+    border-style: solid;
+    border-width: 1px;
+}

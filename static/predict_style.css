@@ -1,0 +1,22 @@
+input[type=submit] {
+    border: 0px;
+    width: 100%;
+    font-size:25px;
+}
+
+body {
+   font-size:60px;
+   background-color: #4c72b0;
+   color: #212121;
+   text-align: center;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   position: fixed;
+}
+
+
+form {
+    display: inline-block;
+    padding-top: 25px;
+}

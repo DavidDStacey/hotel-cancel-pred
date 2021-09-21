@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+    <title>Booking Cancellation Prediction Form</title>
+  </head>
+
+  <div class="topnav">
+    <a class="active" href="/home">Home</a>
+    <a href="/graphs">Graphs</a>
+  </div>
+
+  <body>
+    <form action="{{ url_for('home_page')}}" method="post">
+      <div class="formHeader">Booking Prediction Form</div>
+      <br>
+      What type of hotel are they staying at?
+      <input type="radio" name="hotel" value="resort hotel" required> Resort Hotel
+      <input type="radio" name="hotel" value="city hotel" required> City Hotel
+      <br>
+      Distribution channel?
+      <input type="radio" name="distribution_channel" value="direct" required> Direct
+      <input type="radio" name="distribution_channel" value="corporate" required> Corporate
+      <input type="radio" name="distribution_channel" value="ta/to" required> Travel Agent/Tour Operator
+      <input type="radio" name="distribution_channel" value="undefined" required> <span title="None">Undefined</span>
+      <input type="radio" name="distribution_channel" value="gds" required> <span title="Global Distribution System">GDS</span>
+      <br>
+      Is there a deposit?
+      <input type="radio" name="deposit_type" value="no deposit" required> No Deposit
+      <input type="radio" name="deposit_type" value="refundable" required> Refundable
+      <input type="radio" name="deposit_type" value="non refund" required> Non Refundable
+      <br>
+      What kind of customer are they?
+      <input type="radio" name="customer_type" value="transient" required> <span title="Booking is not part of a group or contract">Transient</span>
+      <input type="radio" name="customer_type" value="contract" required> <span title="Booking has an allotment or other type of contract associated to it">Contract</span>
+      <input type="radio" name="customer_type" value="transient-party" required> <span title="Booking is transient, but is associated to at least other transient booking">Transient-party</span>
+      <input type="radio" name="customer_type" value="group" required> <span title="Booking is associated to a group">Group</span>
+      <br>
+      Have they stayed here before?
+      <input type="radio" name="is_repeated_guest" value="1" required> Yes
+      <input type="radio" name="is_repeated_guest" value="0" required> No
+      <br>
+      <span title="Number of days that elapsed between the entering date of the booking and the arrival date">What is the lead time?</span>
+      <input type="number" name="lead_time" min="0" required>
+      <br>
+      <span title="ex. Jan. 1st is in week 1 and Dec 30th is in week 52">What is the week arrival number?</span>
+      <input type="number" name="arrival_date_week_number" min="1" max="52" required>
+      <br>
+      How many nights of the stay is during the weekend?
+      <input type="number" name="stays_in_weekend_nights" min="0" required>
+      <br>
+      How many nights of the stay is during the week?
+      <input type="number" name="stays_in_week_nights" min="0" required>
+      <br>
+      How many adults?
+      <input type="number" name="adults" min="1" required>
+      <br>
+      How many children?
+      <input type="number" name="children" min="0" required>
+      <br>
+      How many, if any, previous cancellations have the customer had?
+      <input type="number" name="previous_cancellations" min="0" required>
+      <br>
+      How many, if any, changes has the customer made to the booking?
+      <input type="number" name="booking_changes" min="0" required>
+      <br>
+      How long did the customer wait for confirmation of the reservation?
+      <input type="number" name="days_in_waiting_list" min="0" required>
+      <br>
+      What is the average daily rate?
+      <input type="number" name="adr" min="0" required>
+      <br>
+      <input type="submit" value="Submit">
+    </form>
+  </body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Prediction</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='predict_style.css') }}">
+</head>
+
+<body>
+    {% if preds %}
+        <span> The booking will be canceled </span>
+    {% endif %}
+    {% if not preds %}
+        <span> The booking won't be canceled </span>
+    {% endif %}
+    <br>
+    <form action="/">
+        <input type="submit" name="submit" value="Return To Home">
+    </form>
+</body>
+</html>
