@@ -1,1 +1,1 @@
-*.pkl filter=lfs diff=lfs merge=lfs -text
+hotel_model.pkl filter=lfs diff=lfs merge=lfs -text
